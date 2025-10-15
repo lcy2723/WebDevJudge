@@ -1,0 +1,22 @@
+{
+    "ui_tars": {
+        "model": "doubao-1-5-ui-tars-250428",
+        "base_url": "",
+        "api_key": ""
+    },
+    "gpt-4o": {
+        "model": "gpt-4o",
+        "base_url": "",
+        "api_key": ""
+    },
+    "DeepSeek-V3-0324": {
+        "model": "DeepSeek-V3-0324",
+        "base_url": "",
+        "api_key": ""
+    },
+    "Qwen3-235B-A22B-Instruct-2507": {
+        "model": "Qwen3-235B-A22B-Instruct-2507",
+        "base_url": "",
+        "api_key": ""
+    }
+}

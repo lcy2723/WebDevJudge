@@ -1,0 +1,9 @@
+datasets==4.0.0
+openai==1.93.3
+pandas==2.3.1
+pyautogui==0.9.54
+pyperclip==1.9.0
+Requests==2.32.4
+selenium==4.34.0
+tqdm==4.67.1
+ui_tars==0.1.4
