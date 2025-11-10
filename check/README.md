@@ -4,7 +4,7 @@ To ensure the validity of the website, we need to check if the website is workin
 
 ## Usage
 
-Before running the script, ensure that you have set up the environment for dynamic interactive evaluation following the instructions in [envs/README.md](envs/README.md), and run the following command to process the benchmark dataset.
+Before running the script, ensure that you have set up the environment for dynamic interactive evaluation following the instructions in [envs/README.md](../envs/README.md), and run the following command to process the benchmark dataset.
 
 ```bash
 cd WebDevJudge

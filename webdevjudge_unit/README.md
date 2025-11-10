@@ -6,6 +6,17 @@ Webdevjudge Unit is a task-level benchmark for assessing the capability of evalu
 
 The data is available in [data/webdevjudge_unit.jsonl](data/webdevjudge_unit.jsonl).
 
+Each instance is a json object with the following fields:
+
+- `web_id`: web_id
+- `task_id`: task_id
+- `code`: html_code
+- `task`: task_instruction
+- `expected`: expected_result
+- `label`: feasible or infeasible (1 for feasible, 0 for infeasible)
+- `error_type`: error type if the task is infeasible. We provide both Chinese and English error types.
+- `error_reason`: error reason if the task is infeasible (some may be None since the reason is trivial), We provide both Chinese and English error reasons.
+
 ## Evaluation
 
 Similar to WebDevJudge, we provide two evaluation methods:
@@ -20,7 +31,7 @@ cd WebDevJudge
 python webdevjudge_unit/eval.py --model <model>
 ```
 
-The results will be saved in [outputs/](outputs/).
+The results will be saved in outputs/.
 
 ### Agent Evaluation
 

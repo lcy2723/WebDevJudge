@@ -1,7 +1,9 @@
 <div align="center">
 
 # WebDevJudge: Evaluating (M)LLMs as Critiques for Web Development Quality
-
+<p align="center">
+    <a href="https://arxiv.org/abs/2510.18560"><img src="https://img.shields.io/badge/Paper-arXiv:2510.18560-b31b1b.svg" alt="Paper"></a>
+</p>
 <div align="center">
     <img src="assets/overview.png" width="100%">
 </div>
@@ -10,15 +12,16 @@
 </p>
 </div>
 
-## Updates
+## 🚀 Updates
 
+* 2025-11-10: We release the full WebDevJudge Unit dataset.
+* 2025-10-21: We release our [paper](https://www.arxiv.org/abs/2510.18560) and data. Check it out!
 
-
-## Introduction
+## 📖 Introduction
 
 WebDevJudge is a benchmark for evaluating the performance of LLM-as-a-judge for web development tasks. It supports both static and interactive assessment of web development quality with high-quality preference labels.
 
-## Installation
+## 🛠️ Installation
 
 ### General Environment Setup
 
@@ -30,9 +33,9 @@ pip install -r requirements.txt
 
 Next, populate the `api_keys/config.json` file with your API keys, following this format:
 
-```json
+```python
 {   
-    // <model_name> is the name you specify in the command line; other fields are for the OpenAI SDK.
+    # <model_name> is the name you specify in the command line; other fields are for the OpenAI SDK.
     "model_name": {
         "model": "model_name",
         "base_url": "base_url", 
@@ -72,7 +75,7 @@ Setup instructions for the interactive environment are available in [envs/README
 
 Support for additional environments (e.g., Ubuntu, Docker) is forthcoming.
 
-## Static Code Evaluation
+## 💻 Static Code Evaluation
 
 To perform a static code evaluation, run the following command:
 
@@ -112,7 +115,7 @@ python data/process_rubric.py --model gpt-4.1
 
 The generated rubric will be saved to `data/rubric.jsonl`, enabling you to run evaluations with the rubric setting.
 
-## Dynamic Interactive Evaluation
+## 🤖 Dynamic Interactive Evaluation
 
 Before proceeding, ensure the interactive environment is set up and the rubric has been generated. Then, follow these steps to run the dynamic interactive evaluation:
 
@@ -215,8 +218,28 @@ Before proceeding, ensure the interactive environment is set up and the rubric h
 
     The final predictions will be saved in CSV format to the `results` directory. If you want to evaluate a subset of the results, you can modify the `webs.txt` file to pick the websites and run the evaluation again.
 
-## WebDevJudge Unit
+## 📊 WebDevJudge Unit
 
 Webdevjudge Unit is a task-level benchmark for assessing the capability of evaluators to verify task feasibility. Each instance in the benchmark contains a html code, a task instruction, an expected result, and a label indicating whether the task is feasible.
 
 Detailed instruction to run the WebDevJudge Unit is available in [webdevjudge_unit/README.md](webdevjudge_unit/README.md).
+
+## 📚 Citation
+
+If you find this work useful, please consider citing our work. We truly appreciate your support!
+
+```bibtex
+@misc{li2025webdevjudgeevaluatingmllmscritiques,
+      title={WebDevJudge: Evaluating (M)LLMs as Critiques for Web Development Quality}, 
+      author={Chunyang Li and Yilun Zheng and Xinting Huang and Tianqing Fang and Jiahao Xu and Yangqiu Song and Lihui Chen and Han Hu},
+      year={2025},
+      eprint={2510.18560},
+      archivePrefix={arXiv},
+      primaryClass={cs.SE},
+      url={https://arxiv.org/abs/2510.18560}, 
+}
+```
+
+## 📧 Contact
+
+Chunyang Li (cliei@connect.ust.hk)
