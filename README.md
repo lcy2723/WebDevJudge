@@ -14,6 +14,7 @@
 
 ## 🚀 Updates
 
+* 2025-11-16: We release the results for WebDevJudge Unit (UI-TARS 1.5) using code in this repository. You can find the results and corresponding data link in [webdevjudge_unit/README.md](webdevjudge_unit/README.md).
 * 2025-11-10: We release the full WebDevJudge Unit dataset.
 * 2025-10-21: We release our [paper](https://www.arxiv.org/abs/2510.18560) and data. Check it out!
 

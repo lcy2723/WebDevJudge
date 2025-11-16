@@ -62,3 +62,10 @@ After the generation is complete, you can run the following command to evaluate 
 cd WebDevJudge
 python webdevjudge_unit/eval.py --agent
 ```
+
+The results for UI-TARS 1.5 are as follows, we also release the generated data (trajectories / messages) using the code in this repository [here](https://drive.google.com/file/d/1fuCJhUmvJ9bSrJVCk5fIGBKRYLV2gX9_/view?usp=sharing).
+
+| Precision | Recall | F1-score | Accuracy | TP | FP | TN | FN | Test Date |
+|-----------|--------|----------|----------|----|----|----|----|-----------|
+| 82.4%     | 70.3%  | 75.8%    | 75.1%    | 196 | 42  | 181 | 83  | 2025-9-18 (reported in the paper) |
+| 79.4%     | 66.3%  | 72.3%    | 71.7%    | 185 | 48  | 175 | 94  | 2025-11-16 (released) |
