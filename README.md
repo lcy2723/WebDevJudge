@@ -14,6 +14,7 @@
 
 ## 🚀 Updates
 
+* 2026-02-11: We are currently working on refining some ambiguous labels to ensure higher consistency and **scaling up the benchmark to over 1k instances**. The updated version is scheduled for release in early March 2026.
 * 2025-11-16: We release the results for WebDevJudge Unit (UI-TARS 1.5) using code in this repository. You can find the results and corresponding data link in [webdevjudge_unit/README.md](webdevjudge_unit/README.md).
 * 2025-11-10: We release the full WebDevJudge Unit dataset.
 * 2025-10-21: We release our [paper](https://www.arxiv.org/abs/2510.18560) and data. Check it out!
@@ -92,7 +93,7 @@ Alternatively, you can evaluate existing results directly with this command:
 python run.py \
     --setting likert \
     --mode pair \
-    --model gpt-4.1 \
+    --model gpt-4.1
 ```
 
 The parameters for `run.py` are explained in detail below:
