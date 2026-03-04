@@ -184,7 +184,7 @@ def eval_results(data_path, result_dir, path_list_path, do_check=False):
             with open(os.path.join(result_dir, ques_id, model, "result.json"), "r") as f:
                 result = json.load(f)
             static_elements_list = result["static_elements_list"]
-            static_score = len(set(static_elements_list) & set(static_ref_list))
+            static_score = len(set(static_elements_list) & set(leaf_list))
             dynamic_score = result["dynamic_count"]["basic"] + 2 * result["dynamic_count"]["complex"]
             score[model]["static"] = static_score
             score[model]["dynamic"] = dynamic_score
@@ -193,9 +193,9 @@ def eval_results(data_path, result_dir, path_list_path, do_check=False):
 
         intention_score_a = score["a"]["intention"] / metadata["intention"]
         intention_score_b = score["b"]["intention"] / metadata["intention"]
-        if metadata["intention"] > 0:
-            static_score_a = score["a"]["static"] / len(static_ref_list)
-            static_score_b = score["b"]["static"] / len(static_ref_list)
+        if metadata["static"] > 0:
+            static_score_a = score["a"]["static"] / len(leaf_list)
+            static_score_b = score["b"]["static"] / len(leaf_list)
         else:
             static_score_a, static_score_b = 0, 0
         if metadata["dynamic"] > 0:

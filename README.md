@@ -2,7 +2,7 @@
 
 # WebDevJudge: Evaluating (M)LLMs as Critiques for Web Development Quality
 <p align="center">
-    <a href="https://arxiv.org/abs/2510.18560"><img src="https://img.shields.io/badge/Paper-arXiv:2510.18560-b31b1b.svg" alt="Paper"></a>
+    <a href="https://arxiv.org/abs/2510.18560v3"><img src="https://img.shields.io/badge/Paper-arXiv:2510.18560-b31b1b.svg" alt="Paper"></a>
 </p>
 <div align="center">
     <img src="assets/overview.png" width="100%">
@@ -14,10 +14,10 @@
 
 ## 🚀 Updates
 
-* 2026-02-11: We are currently working on refining some ambiguous labels to ensure higher consistency (done) and **scaling up the benchmark to over 1k instances**. The updated version is scheduled for release in early March 2026.
+* 2026-02-11: We are currently working on refining some ambiguous labels to ensure higher consistency (done) and **scaling up the benchmark to over 1k instances**. The updated version is scheduled for release in early March 2026. All inference results of the models are available [here](https://drive.google.com/file/d/145B0z5sUjmiPZ-2wy8QU7Ndf0i6NIe03/view?usp=sharing).
 * 2025-11-16: We release the results for WebDevJudge Unit (UI-TARS 1.5) using code in this repository. You can find the results and corresponding data link in [webdevjudge_unit/README.md](webdevjudge_unit/README.md).
 * 2025-11-10: We release the full WebDevJudge Unit dataset.
-* 2025-10-21: We release our [paper](https://www.arxiv.org/abs/2510.18560) and data. Check it out!
+* 2025-10-21: We release our [paper](https://arxiv.org/abs/2510.18560v3) and data. Check it out!
 
 ## 📖 Introduction
 
@@ -231,10 +231,10 @@ Detailed instruction to run the WebDevJudge Unit is available in [webdevjudge_un
 If you find this work useful, please consider citing our work. We truly appreciate your support!
 
 ```bibtex
-@misc{li2025webdevjudgeevaluatingmllmscritiques,
+@misc{li2026webdevjudgeevaluatingmllmscritiques,
       title={WebDevJudge: Evaluating (M)LLMs as Critiques for Web Development Quality}, 
-      author={Chunyang Li and Yilun Zheng and Xinting Huang and Tianqing Fang and Jiahao Xu and Yangqiu Song and Lihui Chen and Han Hu},
-      year={2025},
+      author={Chunyang Li and Yilun Zheng and Xinting Huang and Tianqing Fang and Jiahao Xu and Lihui Chen and Yangqiu Song and Han Hu},
+      year={2026},
       eprint={2510.18560},
       archivePrefix={arXiv},
       primaryClass={cs.SE},

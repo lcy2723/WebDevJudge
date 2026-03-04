@@ -221,7 +221,7 @@ def count_true_values(rubric_result):
 
 def evaluate_binary(args):
     result_path = os.path.join(args.output_dir, f"rubric_{args.model}_{args.mode}_{args.rubric_type}_{'with_image' if args.with_image else 'no_image'}.jsonl")
-    weights = {"intention": 1, "static": 1, "dynamic": 1}
+    weights = {"intention": 1, "static": 3, "dynamic": 2}
     def count_leaf_nodes(rubric_part):
         return json.dumps(rubric_part, indent=4).count('\"children\": null')
 
